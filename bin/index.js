@@ -139,6 +139,11 @@ opts = parser
     help: 'Github API timeout'
   , default: 10000
   })
+  .option('proxy', {
+    abbr: 'x'
+  , help: 'HTTP proxy to use to access Github'
+  , default: undefined
+  })
 
   // TODO
   // .option('template', {
@@ -165,6 +170,7 @@ var github = new GithubApi({
 , protocol: 'https'
 , pathPrefix: opts['path-prefix']
 , host: opts.host
+, proxy: opts.proxy
 });
 
 // github auth token
