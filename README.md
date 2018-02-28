@@ -29,6 +29,7 @@ Options:
    -z, --time-zone     time zone  [UTC]
    -m, --date-format   date format  [(YYYY/MM/DD HH:mm Z)]
    -v, --verbose       output details
+   -x, --proxy         HTTP proxy to use to reach the GitHub API host
    --host              alternate host name to use with github enterprise  [api.github.com]
    --path-prefix       path-prefix for use with github enterprise
    --between-tags      only diff between these two tags, separate by 3 dots ...
